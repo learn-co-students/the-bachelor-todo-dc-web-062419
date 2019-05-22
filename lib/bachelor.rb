@@ -45,13 +45,24 @@ worker
 end
 
 
-
-
-
-
 def count_contestants_by_hometown(data, hometown)
-  # code here
+
+worker = ""
+counter = 0
+        data.each do |time, contestant_data|
+              contestant_data.each do |contestant_info|
+              if contestant_info["hometown"] == hometown
+                counter += 1
+              end  
+            
+          end
+          end 
+ 
+counter
+
 end
+
+
 
 def get_occupation(data, hometown)
   # code here
