@@ -65,16 +65,13 @@ def get_occupation(data, hometown)
 
         data.each do |time, contestant_data|
               contestant_data.each do |contestant_info|
-              if contestant_info["hometown"] == hometown
-              worker.push(contestant_info["occupation"])
-              end  
-            
-          end
+                if contestant_info["hometown"] == hometown
+                  occupation.push(contestant_info["occupation"])
+                end  
+              end
           end 
-occupation[0]
-  
-  
-  
+  occupation[0]
+
 end
 
 
