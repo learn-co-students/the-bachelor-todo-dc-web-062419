@@ -27,28 +27,24 @@ end
 
 
 
-# def get_contestant_name(data, occupation)
+def get_contestant_name(data, occupation)
 
-# worker = ""
-#         data.each do |time, contestant_data|
-#               contestant_data.each do |contestant_info|
-#               if contestant_info["occupation"] == occupation
-#                 worker = contestant_info["name"]
+worker = ""
+        data.each do |time, contestant_data|
+              contestant_data.each do |contestant_info|
+              if contestant_info["occupation"] == occupation
+                worker = contestant_info["name"]
        
-#               end  
+              end  
             
-#           end
-#           end 
+          end
+          end 
  
-# worker
+worker
   
-# end
-
-
-
-
-
 end
+
+
 
 
 
