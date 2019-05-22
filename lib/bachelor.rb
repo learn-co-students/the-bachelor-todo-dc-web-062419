@@ -1,5 +1,3 @@
-#require 'pry' 
-
 def get_first_name_of_season_winner(data, season)
 
 winner = ""
@@ -22,8 +20,6 @@ end
   a[0]
   
 end
-
-
 
 
 
@@ -57,7 +53,6 @@ counter = 0
             
           end
           end 
- 
 counter
 
 end
@@ -65,8 +60,26 @@ end
 
 
 def get_occupation(data, hometown)
-  # code here
+  
+    occupation = []
+
+        data.each do |time, contestant_data|
+              contestant_data.each do |contestant_info|
+              if contestant_info["hometown"] == hometown
+              worker.push(contestant_info["occupation"])
+              end  
+            
+          end
+          end 
+occupation[0]
+  
+  
+  
 end
+
+
+
+
 
 def get_average_age_for_season(data, season)
   # code here
